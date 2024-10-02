@@ -1,0 +1,32 @@
+package com.infytraining.userinterface;
+
+import org.apache.commons.configuration2.PropertiesConfiguration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import com.infytraining.service.InfyTrainingServiceImpl;
+
+public class InfyTrainingTester {
+	
+	private static InfyTrainingServiceImpl infyTrainingServiceImpl;
+	private static PropertiesConfiguration propertiesConfiguration;
+	private static final Log LOG = LogFactory.getLog(InfyTrainingTester.class);
+
+	public static void main(String[] args) throws ConfigurationException{
+		infyTrainingServiceImpl=new InfyTrainingServiceImpl();
+		propertiesConfiguration=new Configurations().properties("configuration.properties");
+		// addTrainee();
+		// generateTraineeDetails();
+	}
+
+	public static void addTrainee() {
+		// will implement this method
+	}
+
+	
+	public static void generateTraineeDetails() {
+		// will implement this method
+	}
+
+}

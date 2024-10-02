@@ -1,0 +1,36 @@
+package com.infytraining.validator;
+
+import java.time.LocalDate;
+
+import org.apache.commons.logging.LogFactory;
+
+import com.infytraining.exception.InfyTrainingException;
+import com.infytraining.model.Trainee;
+
+public class Validator {
+
+	public void validate(Trainee trainee) throws InfyTrainingException {
+		// will implement this method
+	}
+
+	public Boolean isValidIdProof(String idProof) {
+		// will implement this method
+		return null;
+	}
+
+	public Boolean isValidDateOfJoining(LocalDate dateOfJoining) {
+		// will implement this method
+		return null;
+	}
+	
+	public Boolean isValidTraineeName(String traineeName) {
+		// will implement this method
+		return null;
+	}
+
+	public Boolean isValidContactNumber(Long contactNumber) {
+		// will implement this method
+		return null;
+	}
+
+}
