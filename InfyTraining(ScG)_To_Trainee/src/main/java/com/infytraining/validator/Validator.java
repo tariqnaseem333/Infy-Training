@@ -1,6 +1,7 @@
 package com.infytraining.validator;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 import org.apache.commons.logging.LogFactory;
 
@@ -10,27 +11,42 @@ import com.infytraining.model.Trainee;
 public class Validator {
 
 	public void validate(Trainee trainee) throws InfyTrainingException {
-		// will implement this method
+			String errMsg=null;
+			
+			if(!isValidTraineeName(trainee.getTraineeName()))
+				errMsg="Validator.INVALID_TRAINEENAME";
+			else if(!isValidDateOfJoining(trainee.getDateOfJoining()))
+				errMsg="Validator.INVALID_DATEOFJOINING";
+			else if(!isValidIdProof(trainee.getIdProof()))
+				errMsg="Validator.INVALID_IDPROOF";
+			else if(!isValidContactNumber(trainee.getContactNumber()))
+				errMsg="Validator.INVALID_CONTACTNUMBER";
+			
+			if(errMsg != null) {
+				InfyTrainingException exception = new InfyTrainingException(errMsg);
+			    LogFactory.getLog(getClass()).error(exception.getMessage(), exception);
+			    throw exception;
+			}
 	}
 
 	public Boolean isValidIdProof(String idProof) {
-		// will implement this method
-		return null;
+		return ( idProof.equalsIgnoreCase("Passport") || 
+			     idProof.equalsIgnoreCase("Pan card") ||
+			     idProof.equalsIgnoreCase("Aadhar card") );
 	}
 
 	public Boolean isValidDateOfJoining(LocalDate dateOfJoining) {
-		// will implement this method
-		return null;
+		return ( ChronoUnit.DAYS.between(dateOfJoining, LocalDate.now()) >= 0 &&
+			     ChronoUnit.DAYS.between(dateOfJoining, LocalDate.now()) < 10 );
 	}
 	
 	public Boolean isValidTraineeName(String traineeName) {
-		// will implement this method
-		return null;
+		return traineeName.matches("(?! )([A-Z][a-z]+)([ ][A-Z][a-z]+)(?! )");
 	}
 
 	public Boolean isValidContactNumber(Long contactNumber) {
-		// will implement this method
-		return null;
+		return ( contactNumber.toString().length() == 10 &&
+				 contactNumber.toString().matches("(?=[6-9]).*") );
 	}
 
 }

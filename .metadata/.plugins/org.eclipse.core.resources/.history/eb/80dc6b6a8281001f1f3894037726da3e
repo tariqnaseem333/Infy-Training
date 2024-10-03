@@ -1,0 +1,27 @@
+package com.infytraining.test;
+
+import com.infytraining.exception.InfyTrainingException;
+import com.infytraining.service.InfyTrainingService;
+
+public class InfyTrainingServiceTest {
+
+	private InfyTrainingService infyTrainingService= new InfyTrainingServiceImpl();
+
+	@Test
+	public void addTraineeInvalidDateOfJoiningTest() throws InfyTrainingException{
+		Trainee trainee = new Trainee("John paul", LocalDate.of(2021, 12, 10),
+									  "passport", "john_paul", 9875412345L);
+		InfyTrainingException exception = Assertions.assertThrows(InfyTrainingException.class,
+																  () -> infyTrainingService.addTrainee(trainee));
+		Assertions.assertEquals("Validator.INVALID_DATEOFJOINING", exception.getMessage());
+	}
+	
+	@Test
+	public void generateTraineeReportNoRecordsFoundTest() throws InfyTrainingException {
+		String idProof = "DrivingLicense";
+		InfyTrainingException exception = Assertions.assertThrows(InfyTrainingException.class,
+				  												  () -> infyTrainingService.generateTraineeReport(idProof));
+		Assertions.assertEquals("TraineeService.NO_RECORDS_FOUND", exception.getMessage());
+	}
+
+}

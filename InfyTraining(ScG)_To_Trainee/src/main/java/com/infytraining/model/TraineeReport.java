@@ -1,8 +1,37 @@
 package com.infytraining.model;
 
+import java.time.LocalDate;
 
 public class TraineeReport {
 	
-	//	will implement this class
+	private String traineeName;
+	private LocalDate dateOfJoining;
+	private Long contactNumber;
+	
+	public TraineeReport(String tranieeName, LocalDate dateOfJoining, Long contactNumber) {
+		this.traineeName = tranieeName;
+		this.dateOfJoining = dateOfJoining;
+		this.contactNumber = contactNumber;
+	}
+	
+	public String getTraineeName() {
+		return traineeName;
+	}
+	public void setTraineeName(String tranieeName) {
+		this.traineeName = tranieeName;
+	}
+	public LocalDate getDateOfJoining() {
+		return dateOfJoining;
+	}
+	public void setDateOfJoining(LocalDate dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+	public Long getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(Long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
 	
 }
+

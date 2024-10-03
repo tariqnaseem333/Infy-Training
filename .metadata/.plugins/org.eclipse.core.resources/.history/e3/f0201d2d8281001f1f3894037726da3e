@@ -1,0 +1,55 @@
+package com.infytraining.validator;
+
+import java.time.LocalDate;
+
+import org.apache.commons.logging.LogFactory;
+
+import com.infytraining.exception.InfyTrainingException;
+import com.infytraining.model.Trainee;
+
+public class Validator {
+
+	public void validate(Trainee trainee) throws InfyTrainingException {
+		try {
+			String errMsg=null;
+			if(!isValidContactNumber(trainee.getContactNumber()))
+				errMsg="Validator.INVALID_CONTACTNUMBER";
+			else if(!isValidDateOfJoining(trainee.getDateOfJoining()))
+				errMsg="Validator.INVALID_DATEOFJOINING";
+			else if(!isValidIdProof(trainee.getIdProof()))
+				errMsg="Validator.INVALID_IDPROOF";
+			else if(!isValidTraineeName(trainee.getTraineeName()))
+				errMsg="Validator.INVALID_TRAINEENAME";
+			
+			if(errMsg!=null){
+				InfyTrainingException exception = new InfyTrainingException(errMsg);
+				throw exception;
+			}
+		} catch(InfyTrainingException infyTrainingException){
+			LogFactory.getLog(Validator.class).error(infyTrainingException.getMessage(),infyTrainingException);
+			throw infyTrainingException;
+		}
+	}
+
+	public Boolean isValidIdProof(String idProof) {
+		return ( idProof.equalsIgnoreCase("Passport") || 
+			     idProof.equalsIgnoreCase("Pan card") ||
+			     idProof.equalsIgnoreCase("Aadhar card") );
+	}
+
+	public Boolean isValidDateOfJoining(LocalDate dateOfJoining) {
+		// will implement this method
+		return null;
+	}
+	
+	public Boolean isValidTraineeName(String traineeName) {
+		// will implement this method
+		return null;
+	}
+
+	public Boolean isValidContactNumber(Long contactNumber) {
+		// will implement this method
+		return null;
+	}
+
+}

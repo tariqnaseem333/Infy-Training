@@ -1,0 +1,29 @@
+03-Oct-2024 18:10:15 ERROR - Validator.INVALID_TRAINEENAME
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_TRAINEENAME
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:10:38 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:11:00 ERROR - Validator.INVALID_IDPROOF
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_IDPROOF
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:11:18 ERROR - Validator.INVALID_CONTACTNUMBER
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_CONTACTNUMBER
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:13:07 ERROR - TraineeService.EMPTY_TRAINEE
+com.infytraining.exception.InfyTrainingException: TraineeService.EMPTY_TRAINEE
+	at com.infytraining.service.InfyTrainingServiceImpl.generateTraineeReport(InfyTrainingServiceImpl.java:57) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.generateTraineeDetails(InfyTrainingTester.java:48) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:27) [classes/:?]

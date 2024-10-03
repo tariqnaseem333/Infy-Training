@@ -1,0 +1,42 @@
+03-Oct-2024 17:59:27 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:00:23 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:01:40 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:04:52 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:06:51 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:08:09 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
+03-Oct-2024 18:08:47 ERROR - Validator.INVALID_DATEOFJOINING
+com.infytraining.exception.InfyTrainingException: Validator.INVALID_DATEOFJOINING
+	at com.infytraining.validator.Validator.validate(Validator.java:26) [classes/:?]
+	at com.infytraining.service.InfyTrainingServiceImpl.addTrainee(InfyTrainingServiceImpl.java:23) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.addTrainee(InfyTrainingTester.java:34) [classes/:?]
+	at com.infytraining.userinterface.InfyTrainingTester.main(InfyTrainingTester.java:26) [classes/:?]
